@@ -29,8 +29,8 @@ public class CreateCustomer extends BaseClass {
 		t.getOurCompanyOption().click();
 		t.getCreateCustomerbtn().click();
 		Thread.sleep(5000);
-		//WebDriverWait wait = new WebDriverWait(driver, 10);
-		//wait.until(ExpectedConditions.visibilityOf(t.getTitleDisplayed()));
+		/*WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(t.getTitleDisplayed()));*/
 		String actualCustName = t.getTitleDisplayed().getText();
 		Assert.assertEquals(actualCustName,ExpectedCustName);
 	}
