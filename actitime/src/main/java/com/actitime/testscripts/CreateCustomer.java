@@ -33,6 +33,8 @@ public class CreateCustomer extends BaseClass {
 		wait.until(ExpectedConditions.visibilityOf(t.getTitleDisplayed()));*/
 		String actualCustName = t.getTitleDisplayed().getText();
 		Assert.assertEquals(actualCustName,ExpectedCustName);
+		
+		
 	}
 
 }
